@@ -123,6 +123,4 @@ public class Lightmap {
     public void setRenderMode(RenderMode RenderMode) {
         this.RenderMode = RenderMode;
     }
-        
-    
 }

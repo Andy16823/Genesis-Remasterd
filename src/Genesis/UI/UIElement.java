@@ -20,6 +20,7 @@ public abstract class UIElement {
     private Vector<UIActionListener> ActionLisener;
     private String name;
     private String tag;
+    private String text;
     private boolean enabled;
     private Vector2 location;
     private Vector2 size;
@@ -31,6 +32,7 @@ public abstract class UIElement {
     private boolean Border;
     private int BorderWidth;
     private Canvas Canvas;
+    private UIElement Parent;
     
     public UIElement() {
         this.ActionLisener = new Vector<UIActionListener>();
@@ -185,5 +187,21 @@ public abstract class UIElement {
     public void setCanvas(Canvas Canvas) {
         this.Canvas = Canvas;
     }
-    
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public UIElement getParent() {
+        return Parent;
+    }
+
+    public void setParent(UIElement Parent) {
+        this.Parent = Parent;
+    }
+
 }
