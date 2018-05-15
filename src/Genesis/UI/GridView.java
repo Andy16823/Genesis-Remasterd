@@ -127,6 +127,13 @@ public class GridView extends UIElement {
         int i = 0;
         int MouseX = e.getX() - this.getCanvas().getLocation().getX() - this.getLocation().getX();
         int MouseY = e.getY() - this.getCanvas().getLocation().getY() - this.getLocation().getY();
+        
+        if(this.getParent() != null)
+        {
+            MouseX = MouseX - this.getParent().getLocation().getX();
+            MouseY = MouseY - this.getParent().getLocation().getY();
+        }
+        
         for(Rectangle rect : this.Grid)
         {
             if(rect.contains(MouseX, MouseY))

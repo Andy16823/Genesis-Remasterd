@@ -29,6 +29,9 @@ public class Progressbar extends UIElement {
         this.BarColor = Color.GREEN;
         this.setEnabled(true);
         this.space = 0;
+        this.setCurrent(100);
+        this.setIncrementValue(1);
+        this.setMax(100);
     }
 
     @Override

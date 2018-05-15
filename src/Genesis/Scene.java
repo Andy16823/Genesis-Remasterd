@@ -221,5 +221,69 @@ public class Scene {
     {
         this.Lightmaps.add(lm);
     }
-    
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public Vector2 getLocation() {
+        return location;
+    }
+
+    public void setLocation(Vector2 location) {
+        this.location = location;
+    }
+
+    public Vector2 getSize() {
+        return size;
+    }
+
+    public void setSize(Vector2 size) {
+        this.size = size;
+    }
+
+    public Vector<GameElement> getElements() {
+        return elements;
+    }
+
+    public void setElements(Vector<GameElement> elements) {
+        this.elements = elements;
+    }
+
+    public Vector<Lightmap> getLightmaps() {
+        return Lightmaps;
+    }
+
+    public void setLightmaps(Vector<Lightmap> Lightmaps) {
+        this.Lightmaps = Lightmaps;
+    }
+
+    public BufferedImage getScene_buffer() {
+        return scene_buffer;
+    }
+
+    public void setScene_buffer(BufferedImage scene_buffer) {
+        this.scene_buffer = scene_buffer;
+    }
+        
 }

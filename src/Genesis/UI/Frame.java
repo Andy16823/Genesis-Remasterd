@@ -106,6 +106,8 @@ public class Frame extends UIElement{
      */
     public void AddElement(UIElement element)
     {
+        element.setCanvas(this.getCanvas());
+        element.setParent(this);
         this.Elements.add(element);
     }
     
